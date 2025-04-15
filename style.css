@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ded7d7;
+  font-family: Helvetica, sans-serif;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* HERO STYLING */
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("Assets/bg1.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .hero_content {
+  width: 80%;
+  color: #ded7d7;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.hero .btn {
+  background: #ded7d7;
+  transition: 0.5s ease;
+}
+.hero .btn:hover {
+  background-color: #1b1919;
+  color: #ded7d7;
+}
+
+/* FEATURES STYLING */
+.features_container {
+  padding: 8rem 1rem;
+}
+.features_container h2 {
+  color: #602020e6;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.features {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+.features .food {
+  background-color: #fff;
+  border: 3px solid #da940761;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.features .food h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.features .food p {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.features .food img {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 1rem;
+}
+.features .food button {
+  display: block;
+  margin-inline: auto;
+  font-size: 1.2rem;
+  background-color: #752222e6;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  transition: 0.5s ease;
+}
+.features .food button:hover {
+  background-color: #da9407fe;
+}
+
+/* FOOTER STYLING */
+footer {
+  background: #602020e6;
+  width: 100%;
+  color: aliceblue;
+  padding: 2rem;
+  border-radius: 30px 30px 0 0;
+}
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+footer .link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+footer .link img {
+  width: 40px;
+  height: auto;
+}
+footer .link a,
+.link p {
+  font-size: 1rem;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 2px;
+}
+footer .link a:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 640px) {
+  .hero .hero_content {
+    width: 70%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .features_container {
+    padding-inline: 2rem;
+  }
+  .features .food h3 {
+    font-size: 1.6rem;
+  }
+  .features .food p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .hero_content {
+    width: 60%;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .features_container {
+    padding-inline: 1.5rem;
+  }
+  .features_container h2 {
+    font-size: 4rem;
+  }
+  .features .food h3 {
+    font-size: 1.5rem;
+  }
+  .features .food p {
+    font-size: 1rem;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .link img {
+    width: 40px;
+  }
+  footer .link a,
+  .link p {
+    font-size: 1rem;
+  }
+  footer h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero .hero_content {
+    width: 55%;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+  .features_container {
+    padding-inline: 2rem;
+  }
+  .features_container h2 {
+    font-size: 3rem;
+  }
+  .features .food h3 {
+    font-size: 1.8rem;
+  }
+  .features .food p {
+    font-size: 1.2rem;
+  }
+  footer .link img {
+    width: 60px;
+  }
+  footer .link a,
+  .link p {
+    font-size: 1.5rem;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero .hero_content {
+    width: 44%;
+  }
+  .hero h1 {
+    font-size: 3.8rem;
+    line-height: 1.3;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 2rem;
+  }
+  .features_container {
+    padding-inline: 2rem;
+  }
+  .features_container h2 {
+    font-size: 3.5rem;
+  }
+  .features .food h3 {
+    font-size: 1.7rem;
+  }
+  .features .food p {
+    font-size: 1.3rem;
+  }
+  footer .link img {
+    width: 60px;
+  }
+  footer .link a,
+  .link p {
+    font-size: 1.5rem;
+  }
+  footer h2 {
+    font-size: 3rem;
+  }
+}
